@@ -63,7 +63,7 @@ public class AdminController {
         return "view/edit";
     }
 
-    @PatchMapping("/people/{id}")
+    @PatchMapping("/people/")
     public String updatePerson(@ModelAttribute("user") @Valid User updateuser, BindingResult bindingResult) {
         if (bindingResult.hasErrors()) {
             return "view/edit";
